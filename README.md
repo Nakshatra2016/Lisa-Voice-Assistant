@@ -1,4 +1,4 @@
-# Lisa AI Assistant
+# Lisa Voice Assistant
 
 A Python voice assistant named **Lisa**. Say the wake word **"lisa"** and then give a command.
 

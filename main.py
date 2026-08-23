@@ -118,7 +118,7 @@ def process_command(c):
 
 if __name__ == "__main__":
     print("""
-================ LISA AI ASSISTANT ================
+================ LISA VOICE ASSISTANT ================
 
 Wake Word: lisa
 
@@ -140,7 +140,7 @@ Commands you can use:
 ====================================================
 """)
 
-    speak("Hi, I am Lisa, your personal assistant. I am now active.")
+    speak("Hi, I am Lisa, your voice assistant. I am now active.")
 
     while True:
         try:
