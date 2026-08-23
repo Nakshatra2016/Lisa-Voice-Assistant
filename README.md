@@ -1,10 +1,12 @@
-# Vanshika AI Assistant
+# Liza AI Assistant
 
-A small Python voice assistant. The main project files are:
+A Python voice assistant named **Liza**. Say the wake word **"liza"** and then give a command.
 
-- `main.py`
-- `music_library.py`
-- `contacts.py`
+## Project Files
+
+- `main.py` — main entry point and command logic
+- `music_library.py` — dictionary of songs and their YouTube links
+- `contacts.py` — contact names and phone numbers
 
 ## Setup
 
@@ -20,6 +22,8 @@ Set your News API key before running the news command:
 export NEWS_API_KEY="your_newsapi_key_here"
 ```
 
+Get a free key at https://newsapi.org
+
 ## Run
 
 ```bash
@@ -28,26 +32,30 @@ python main.py
 
 ## Commands
 
-- `open google`
-- `open facebook`
-- `open youtube`
-- `open linkedin`
-- `play <song name>`
-- `news`
-- `open <app name>`
-- `close <app name>`
-- `call <contact name>`
-- `hello`
+After saying **"liza"**, you can use:
 
-## Upload To GitHub
+| Command | Action |
+|---|---|
+| `open google` | Opens Google |
+| `open facebook` | Opens Facebook |
+| `open youtube` | Opens YouTube |
+| `open linkedin` | Opens LinkedIn |
+| `play <song name>` | Plays a song from music_library |
+| `news` | Reads top 5 headlines |
+| `open <app name>` | Opens a Mac application |
+| `close <app name>` | Closes a Mac application |
+| `call <contact name>` | Calls via FaceTime |
+| `hello` | Liza greets you |
+| `time` | Tells current time |
+| `date` | Tells today's date |
 
-Check `contacts.py` before uploading because it contains phone numbers.
+## Customizing
 
-```bash
-git init
-git add .
-git commit -m "Initial Vanshika assistant project"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
-git push -u origin main
-```
+- **Add songs**: Edit `music_library.py` and add entries to the `music` dictionary
+- **Add contacts**: Edit `contacts.py` and add name → phone number entries
+
+## Notes
+
+- Requires a working microphone
+- Internet connection needed for speech recognition and news
+- FaceTime calling works on macOS only
