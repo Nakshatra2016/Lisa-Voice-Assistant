@@ -11,7 +11,7 @@ engine = pyttsx3.init()
 
 newsapi = os.getenv("NEWS_API_KEY")
 
-WAKE_WORD = "liza"
+WAKE_WORD = "lisa"
 
 voices = engine.getProperty("voices")
 
@@ -118,9 +118,9 @@ def process_command(c):
 
 if __name__ == "__main__":
     print("""
-================ LIZA AI ASSISTANT ================
+================ LISA AI ASSISTANT ================
 
-Wake Word: liza
+Wake Word: lisa
 
 Commands you can use:
 
@@ -140,7 +140,7 @@ Commands you can use:
 ====================================================
 """)
 
-    speak("Hi, I am Liza, your personal assistant. I am now active.")
+    speak("Hi, I am Lisa, your personal assistant. I am now active.")
 
     while True:
         try:
@@ -153,7 +153,7 @@ Commands you can use:
             print(f"Heard: {word}")
 
             if WAKE_WORD in word.lower():
-                print(f"Wake word detected — Liza active!")
+                print(f"Wake word detected — Lisa active!")
                 speak("Yes, how can I help you?")
 
                 with sr.Microphone() as source:
@@ -172,7 +172,7 @@ Commands you can use:
         except sr.RequestError as e:
             print(f"Speech recognition service error: {e}")
         except KeyboardInterrupt:
-            print("\nLiza assistant stopped.")
+            print("\nLisa assistant stopped.")
             speak("Goodbye!")
             break
         except Exception as e:

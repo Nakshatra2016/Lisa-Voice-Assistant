@@ -1,6 +1,6 @@
-# Liza AI Assistant
+# Lisa AI Assistant
 
-A Python voice assistant named **Liza**. Say the wake word **"liza"** and then give a command.
+A Python voice assistant named **Lisa**. Say the wake word **"lisa"** and then give a command.
 
 ## Project Files
 
@@ -32,7 +32,7 @@ python main.py
 
 ## Commands
 
-After saying **"liza"**, you can use:
+After saying **"lisa"**, you can use:
 
 | Command | Action |
 |---|---|
@@ -45,7 +45,7 @@ After saying **"liza"**, you can use:
 | `open <app name>` | Opens a Mac application |
 | `close <app name>` | Closes a Mac application |
 | `call <contact name>` | Calls via FaceTime |
-| `hello` | Liza greets you |
+| `hello` | Lisa greets you |
 | `time` | Tells current time |
 | `date` | Tells today's date |
 
