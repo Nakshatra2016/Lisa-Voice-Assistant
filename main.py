@@ -51,7 +51,7 @@ def process_command(c):
 
     elif "news" in c.lower():
         if not newsapi:
-            speak("News API key is not set. Please set the NEWS_API_KEY environment variable.")
+            speak("News API key not found")
             return
 
         try:
@@ -100,7 +100,7 @@ def process_command(c):
             speak(f"Could not find application {app_name}")
 
     elif "hello" in c.lower():
-        speak("Hello! How can I assist you?")
+        speak("Hello! How can I help you?")
 
     elif "time" in c.lower():
         from datetime import datetime

@@ -1,61 +1,48 @@
 # Lisa Voice Assistant
 
-A Python voice assistant named **Lisa**. Say the wake word **"lisa"** and then give a command.
+I made this voice assistant project in Python. You just say "lisa" and then tell her what to do.
 
-## Project Files
+## Files
 
-- `main.py` — main entry point and command logic
-- `music_library.py` — dictionary of songs and their YouTube links
-- `contacts.py` — contact names and phone numbers
+- `main.py` - the main file, runs everything
+- `music_library.py` - has the songs I added
+- `contacts.py` - my contacts list
 
-## Setup
+## How to run
+
+First install the requirements:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Set your News API key before running the news command:
-
-```bash
-export NEWS_API_KEY="your_newsapi_key_here"
-```
-
-Get a free key at https://newsapi.org
-
-## Run
+Then just run:
 
 ```bash
 python main.py
 ```
 
-## Commands
+## What it can do
 
-After saying **"lisa"**, you can use:
+Say **"lisa"** first, then:
 
-| Command | Action |
-|---|---|
-| `open google` | Opens Google |
-| `open facebook` | Opens Facebook |
-| `open youtube` | Opens YouTube |
-| `open linkedin` | Opens LinkedIn |
-| `play <song name>` | Plays a song from music_library |
-| `news` | Reads top 5 headlines |
-| `open <app name>` | Opens a Mac application |
-| `close <app name>` | Closes a Mac application |
-| `call <contact name>` | Calls via FaceTime |
-| `hello` | Lisa greets you |
-| `time` | Tells current time |
-| `date` | Tells today's date |
+- open google / youtube / facebook / linkedin
+- play kesariya (or any song you add in music_library.py)
+- news (reads top headlines, needs a NewsAPI key)
+- call mom (or any contact in contacts.py)
+- open / close any app
+- hello
+- time
+- date
 
-## Customizing
+## News feature
 
-- **Add songs**: Edit `music_library.py` and add entries to the `music` dictionary
-- **Add contacts**: Edit `contacts.py` and add name → phone number entries
+For news you need a free API key from newsapi.org. Set it like this before running:
 
-## Notes
+```bash
+export NEWS_API_KEY="your_key_here"
+```
 
-- Requires a working microphone
-- Internet connection needed for speech recognition and news
-- FaceTime calling works on macOS only
+## Note
+
+This only works on Mac because of the FaceTime calling and app open/close stuff.

@@ -1,6 +1,6 @@
 contacts = {
-    "mom": "replace_with_phone_number",
-    "bhai": "replace_with_phone_number",
-    "rathi": "replace_with_phone_number",
-    "sid": "replace_with_phone_number",
+    "mom": "9999999999",
+    "bhai": "9999999998",
+    "rathi": "9999999997",
+    "sid": "9999999996",
 }
