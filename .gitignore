@@ -1,26 +1,4 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-
-# Virtual environments
 .venv/
-venv/
-env/
-
-# Local configuration and private data
-.env
-
-# Editor/system files
+__pycache__/
+*.pyc
 .DS_Store
-.vscode/
-.idea/
-
-# Scratch/old experiment files
-tempCodeRunnerFile.shellscript
-creasted by ai.py
-app.py
-listening.gif
