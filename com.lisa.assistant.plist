@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.lisa.assistant</string>
+
+    <!-- install.sh fills these two in for your machine -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>__PYTHON_PATH__</string>
+        <string>__SCRIPT_PATH__</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>__SCRIPT_DIR__</string>
+
+    <!-- start automatically at login -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- restart Lisa if it crashes, but don't hammer the machine if it
+         keeps crashing immediately -->
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    <key>ThrottleInterval</key>
+    <integer>15</integer>
+
+    <!-- environment variables the script needs; install.sh fills these in
+         from your shell environment at install time -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>NEWS_API_KEY</key>
+        <string>__NEWS_API_KEY__</string>
+        <key>CRYPTO_NEWS_API_KEY</key>
+        <string>__CRYPTO_NEWS_API_KEY__</string>
+        <key>FOREX_NEWS_API_KEY</key>
+        <string>__FOREX_NEWS_API_KEY__</string>
+        <key>ANTHROPIC_API_KEY</key>
+        <string>__ANTHROPIC_API_KEY__</string>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/opt/homebrew/bin</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>__SCRIPT_DIR__/lisa.log</string>
+    <key>StandardErrorPath</key>
+    <string>__SCRIPT_DIR__/lisa.error.log</string>
+</dict>
+</plist>
